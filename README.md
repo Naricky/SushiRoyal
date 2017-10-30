@@ -2,12 +2,12 @@
 
 This is Freelancing website under construction for SushiRoyal Ltd. It is SPA in which promotes company's business. Techstack used is Vue.js.
 
-#Getting Started
+# Getting Started
 
 -npm install
 
 -npm run server
 
-#Contributor
+# Contributor
 
 Ricky Lee

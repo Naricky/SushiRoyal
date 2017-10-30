@@ -1,24 +1,30 @@
+var Scrollactive = require('vue-scrollactive');
+
 <template>
+
   <div id="app">
     <div class="Title">Title</div>
       <nav>
       <ul>
-        <li><a class='home' @click='abc'>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Menu</a></li>
-        <li><a>Contact</a></li>
+        <li><a v-scroll-to="'#home'">Home</a></li>
+        <li><a v-scroll-to="'#about'">About</a></li>
+        <li><a v-scroll-to="'#comment'">Comment</a></li>
+        <li><a v-scroll-to="'#menu'">Menu</a></li>
+        <li><a v-scroll-to="'#gallery'">Gallery</a></li>
+        <li><a v-scroll-to="'#contact'">Contact</a></li>
       </ul>
     </nav>
-    <Intro/>
-    <AboutUs/>
-    <CustomerComment/>
-    <Menu/>
-    <Gallery/>
-    <FooterBar/>
+    <div id='home'><Intro/></div>
+    <div id='about'><AboutUs/></div>
+    <div id='comment'><CustomerComment/></div>
+    <div id='menu'><Menu/></div>
+    <div id='gallery'><Gallery/></div>
+    <div id='contact'><FooterBar/></div>
   </div>
 </template>
 
 <script>
+
 document.title = "Sushi Royal"
 import Intro from './components/Intro'
 import AboutUs from './components/AboutUs'
@@ -34,9 +40,9 @@ export default {
   },
   methods: {
        abc: function () {
-         $('.home').click(function(e){
-          $('Footerbar').slideToggle();
-          });
+$('html, body').animate({
+        scrollTop: $(".test").offset().top
+    }, 2000);
         }
       },
 }
