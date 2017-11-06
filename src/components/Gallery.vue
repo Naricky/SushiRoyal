@@ -15,7 +15,7 @@ export default {
 <style scoped>
 
   .backgroundGalleryImage {
-    background-color: purple;
+    background-color: #F5F5EC;
     height:550px;
     -webkit-background-size: cover;
     -moz-background-size: cover;

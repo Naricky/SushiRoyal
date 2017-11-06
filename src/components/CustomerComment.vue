@@ -24,6 +24,7 @@ export default {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color:#F5F5EC;
   }
 
   .catchyTitle {

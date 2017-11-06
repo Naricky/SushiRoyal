@@ -1,31 +1,44 @@
-var Scrollactive = require('vue-scrollactive');
+<!-- var Scrollactive = require('vue-scrollactive'); -->
 
 <template>
 
-  <div id="app">
-    <div class="Title">Title</div>
-      <nav>
-      <ul>
-        <li><a v-scroll-to="'#home'">Home</a></li>
-        <li><a v-scroll-to="'#about'">About</a></li>
-        <li><a v-scroll-to="'#comment'">Comment</a></li>
-        <li><a v-scroll-to="'#menu'">Menu</a></li>
-        <li><a v-scroll-to="'#gallery'">Gallery</a></li>
-        <li><a v-scroll-to="'#contact'">Contact</a></li>
-      </ul>
-    </nav>
+<div id="app">
+
+
+  <div id="header">
+    <h1 id="headerTitle">Ganso Sushi
+        <div id="buttonGrouped">
+      <b v-scroll-to="'#home'">Home</b>
+      <b v-scroll-to="'#about'">About</b>
+      <b v-scroll-to="'#comment'">Comment</b>
+      <b v-scroll-to="'#menu'">Menu</b>
+      <b v-scroll-to="'#gallery'">Gallery</b>
+      <b v-scroll-to="'#contact'">Contact Us</b>
+    </div>
+  <div id='logo'>
+    LOGO HERE
+  </div>
+    </h1>
+
+
+
+  </div>
+
+
     <div id='home'><Intro/></div>
     <div id='about'><AboutUs/></div>
     <div id='comment'><CustomerComment/></div>
     <div id='menu'><Menu/></div>
     <div id='gallery'><Gallery/></div>
     <div id='contact'><FooterBar/></div>
+
+
   </div>
 </template>
 
 <script>
 
-document.title = "Sushi Royal"
+document.title = "Ganso Sushi"
 import Intro from './components/Intro'
 import AboutUs from './components/AboutUs'
 import CustomerComment from './components/CustomerComment'
@@ -38,13 +51,7 @@ export default {
   components: {
     Intro,AboutUs,CustomerComment,Menu,Gallery,FooterBar
   },
-  methods: {
-       abc: function () {
-$('html, body').animate({
-        scrollTop: $(".test").offset().top
-    }, 2000);
-        }
-      },
+
 }
 
 
@@ -52,53 +59,61 @@ $('html, body').animate({
 
 <style>
 
-.Title {
-  font-style: 'Arial';
-  font-size: 120px;
-  text-align: center
+html {
+  width: 100%; height: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+body {
+  margin: 0px; padding: 0px;
+  font: 14px serif;
+  width: 100%; height: 100%;
 }
 
-nav {
-  margin: 50px;
+h1 {
+  margin: 0px;
+  padding: 30px 0px;
+  color: #CCC;
+  font: bold 40px serif;
+  letter-spacing: 5px;
+  text-align: left;
 }
 
-ul {
-  overflow: auto;
-  list-style-type: none;
+p {
+  margin: 0px;
+  padding: 10px 20px;
+  line-height: 1.5;
 }
 
-li {
-  height: 25px;
-  float: left;
-  margin-right: 0px;
-  border-right: 1px solid #aaa;
-  padding: 0 20px;
+
+
+b {
+  font-size: 20px;
+}
+#header {
+  margin-bottom: 0px;
+  padding-top: 0px;
+  position: relative;
+  background: black;
+  width: 100%; height: 100%;
 }
 
-li:last-child {
-  border-right: none;
+#logo {
+  float:right;
+  font-size:;
 }
 
-li a {
-  text-decoration: none;
-  color: #ccc;
-  font: 25px/1 Helvetica, Verdana, sans-serif;
-  text-transform: uppercase;
-
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.buttonGrouped {
+  float:right;
 }
 
-li a:hover {
-  color: #666;
+#buttonGrouped b:hover {
+  background: red;
+  background: linear-gradient(#222, #333);
+}
+
+#content {
+  margin: 0px;
+  padding: 20px 0px 0px 0px;
 }
 
 

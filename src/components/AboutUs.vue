@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="backgroundAboutUsImage">
-      <div class="catchyTitle"> ABOUT US HERE</div>
+      <div class="catchyTitle"> ͏Ab͏o͏u͏t ͏Us</div>
         <div class="descriptionBox">
-        <p class="descriptionTitle"> It started with simple dream...</p>
-        <p class="descriptionDetail"> Namwook loves Sushi. He started making Sushi.</p>
+        <p class="descriptionTitle"> It started with simple dream</p>
+        <p class="descriptionDetail"> It was thirty years ago when Chef Choi started eating sushi. He likes sushi. He started making sushi. He lovesss sushi.</p>
         </div>
         <div class="descriptonBox2">
           <img class="imageAboutUs" src="../assets/sushi.png"></img>
@@ -24,6 +24,7 @@ export default {
 <style scoped>
 
   p {
+    font-family: serif;
     margin-left: 150px;
   }
   .descriptionBox {
@@ -37,32 +38,41 @@ export default {
   }
 
   .descriptionBox2 {
-    float: right;
+    margin-right: 150px;
   }
 
   .descriptionTitle {
     font-size: 30px;
     font-weight: bold;
-    font-family: arial;
+
 
   }
 
   .descriptionDetail {
     font-size: 20px;
     font-style: italic;
-    font-family: arial;
+    width: 500px;
+
 
   }
 
   .backgroundAboutUsImage {
-    background-color: white;
-    height:550px;
+    height: 500px;
+  opacity: 1;
+  background: url("../assets/aboutusback.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
   }
 
   .catchyTitle {
-    padding-top: 110px;
-    text-align: center;
-    font-size: 80px;
+    color: #CD594A;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 50px;
+
   }
 
 

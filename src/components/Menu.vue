@@ -17,7 +17,7 @@ export default {
 <style scoped>
 
   .backgroundMenuImage {
-    background-color: white;
+    background-color: #F5F5EC;
     height:550px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
