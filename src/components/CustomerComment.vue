@@ -18,7 +18,7 @@
                 <b>webdeveloper</b>
               </h3>
               <p>
-                Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillumLorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillumLorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillumLorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing.
+                Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillumLorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.
               </p>
             </div>
           </li>
@@ -34,7 +34,7 @@
             <b>webdesigner </b>
             </h3>
             <p>
-              Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillum in occaecat adipisicing ullamco cillum in occaecat proident commodo in <a href="https://www.google.com">https://www.google.com</a>.
+              Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillum in occaecat adipisicing ullamco cillum in occaecat proident commodo.</a>.
             </p>
             </div>
           </li>
@@ -135,8 +135,6 @@ body {
 #messages li:nth-child(2n) .facebook { right: -10px; }
 
 #messages li:nth-child(2n) .twitter { right: -5%; }
-
-#messages li:nth-child(2n) .github { right: -1%; }
 
 #messages .infos {
   -webkit-border-radius: 50%;
@@ -267,6 +265,10 @@ body {
   top: 48px;
   left: -11px;
   border-right: 19px solid rgba(0, 0, 0, 0.1); }
+
+@media all and (max-width: 1024px) and (min-width: 568px){
+  .backgroundCommentImage {height: 1200px; }
+}
 
 
 </style>
