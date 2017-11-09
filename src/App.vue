@@ -7,6 +7,9 @@
 
   <div id="header">
     <h1 id="headerTitle">Ganso Sushi
+       <div id='logo'>
+        <img class="imageAboutUs" src="./assets/logo.png"></img>
+      </div>
         <div id="buttonGrouped">
       <b v-scroll-to="'#home'">Home</b>
       <b v-scroll-to="'#about'">About</b>
@@ -14,10 +17,9 @@
       <b v-scroll-to="'#menu'">Menu</b>
       <b v-scroll-to="'#gallery'">Gallery</b>
       <b v-scroll-to="'#contact'">Contact Us</b>
+
     </div>
-  <div id='logo'>
-    LOGO HERE
-  </div>
+
     </h1>
 
 
@@ -98,8 +100,11 @@ b {
 }
 
 #logo {
-  float:right;
-  font-size:;
+  float: right;
+  height: 50px;
+  font-size: 30px;
+  margin-bottom: 0px;
+
 }
 
 .buttonGrouped {
@@ -113,7 +118,7 @@ b {
 
 #content {
   margin: 0px;
-  padding: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 
