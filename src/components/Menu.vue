@@ -4,7 +4,7 @@
       <div class="catchyTitle"> Menu</div>
       <hr>
       <body>
-  <h1>Appetizers</h1>
+  <h1>Favorites</h1>
   <table>
     <tr>
       <td>
@@ -53,21 +53,11 @@ Marinated tenderloins covered with our special mildly spiced breadcrumbs, deep-f
       </td>
     </tr>
   </table>
-
-
-<h1>Soup</h1>
-<table>
-  <tr>
-    <td><h2>Soup of the Day</h2>
-Homemade daily feature Cup 2.95 Bowl 3.95</td>
-    <td><h2>Lobster Bisque</h2>
-<strong>FRIDAY & SATURDAY ONLY</strong> Fresh lobster in a stock of butter, heavy cream and sherry Cup 3.95 Bowl 5.95</td>
-  </tr>
-  <tr>
-    <td><h2>French Onion Soup</h2>
-Homemade and served Au Gratin Cup 2.95 Bowl 3.95</td>
-  </tr>
- </table>
+  <div class="download">
+          <p>
+             <a href="/src/assets/sushi.png" class="button" download>Download Menu</a>
+          </p>
+       </div>
 </body>
     </div>
 

@@ -6,9 +6,9 @@
 
 
   <div id="header">
-    <h1 id="headerTitle">Ganso Sushi
+    <h1 id="headerTitle">Kanzo Sushi
        <div id='logo'>
-        <img class="imageAboutUs" src="./assets/logo.png"></img>
+        <img class="imageAboutUs" src="./assets/kanzoLogo-1.jpg"></img>
       </div>
         <div id="buttonGrouped">
       <b v-scroll-to="'#home'">Home</b>
@@ -101,9 +101,9 @@ b {
 
 #logo {
   float: right;
-  height: 50px;
+  height: 30px;
   font-size: 30px;
-  margin-bottom: 0px;
+  margin: 0px 60px 0px 0px;
 
 }
 

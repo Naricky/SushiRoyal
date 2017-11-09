@@ -4,7 +4,7 @@
       <div class="catchyTitle"> ͏Ab͏o͏u͏t ͏Us</div>
       <hr>
         <div class="descriptionBox">
-        <p class="descriptionTitle"> Ganso's Story</p>
+        <p class="descriptionTitle"> Kanzo's Story</p>
         <p class="descriptionDetail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit risus vitae semper accumsan. Suspendisse efficitur dui vitae leo ornare placerat. Curabitur tempus euismod ante vel finibus. Nam euismod ipsum eget tellus dictum, a dictum nulla consectetur. Nam condimentum pulvinar dui sit amet dignissim. </p>
         </div>
         <div class="descriptonBox2">
