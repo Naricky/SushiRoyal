@@ -5,44 +5,44 @@
           OPENING HOUR
         </a>
     <table class="table-plain branch-hours">
-      <tbody>
+      <tbody class="line">
         <tr class="Monday">
-          <td>Monday</td>
+          <td>Monday: </td>
           <td>  11:00am - 9:00pm</td>
           <td></td>
         </tr>
       <tr class="Tuesday">
-        <td>Tuesday</td>
+        <td>Tuesday: </td>
         <td>  11:00am - 9:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Wednesday">
-        <td>Wednesday</td>
+        <td>Wednesday: </td>
         <td>  11:00am - 9:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Thursday">
-        <td>Thursday</td>
+        <td>Thursday: </td>
         <td>  11:00am - 9:30pm</td>
         <td></td>
       </tr>
 
       <tr class="Friday">
-        <td>Friday</td>
+        <td>Friday: </td>
         <td>  11:00am - 9:30pm</td>
         <td></td>
       </tr>
 
       <tr class="Saturday">
-        <td>Saturday</td>
+        <td>Saturday: </td>
         <td>  11:00am - 9:30pm</td>
         <td></td>
       </tr>
 
       <tr class="Sunday">
-        <td>Sunday</td>
+        <td>Sunday: </td>
         <td>  11:00am - 9:30pm</td>
         <td></td>
       </tr>
@@ -52,11 +52,11 @@
   <div class='other'>
     <a class='phoneAndAddress'> Phone Number and Address </a>
     <div class='phone'>
-      778-379-3837
+      778-379-3837 /
       778-379-3469
     </div>
     <div class='address'>
-      2893 Grandview Hwy Vancouver BC V5M 2E1
+      2893 Grandview Hwy, Vancouver, BC, V5M 2E1
     </div>
   </div>
   </div>
@@ -74,8 +74,9 @@ export default {
 <style scoped>
 
 .table {
-  width: 45%;
+  width: 50%;
   float: left;
+  text-align: center;
 }
 
 .other {
@@ -83,7 +84,7 @@ export default {
 }
 
 .phoneAndAddress{
-  text-align:left;
+  text-align: center;
   margin-right: 200px;
 }
 
@@ -97,7 +98,7 @@ a {
 }
 
 .background {
-
+  text-align: center;
 }
 table.table-plain,
 table.table-plain td
@@ -117,14 +118,14 @@ table.table-plain td
 }
 
 table.table-plain td:first-child {
-  text-align: right;
+  text-align: center;
   font-weight: bold;
-  width: 10%;
+  width: 70%;
 
 }
 
 table.table-plain td:nth-child(2) {
-  text-align: left;
+  text-align: center;
 }
 
 #contact > div > div.table {
@@ -134,8 +135,9 @@ table.table-plain td:nth-child(2) {
 .other {
   background-color: white;
   font-family: "AvenirNextLTW01-Regular", sans-serif;
-    font-size: 16;
-    line-height: 1.3;
-    color: #bcbcbc;
+  font-size: 16;
+  line-height: 1.3;
+  color: #bcbcbc;
+  text-align: center;
 }
 </style>

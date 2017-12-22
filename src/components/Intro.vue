@@ -12,7 +12,7 @@
 export default {
   data () {
     return {
-       images: [require('../assets/introback.jpg'), 'http://i.imgur.com/PUD9HQL.jpg', 'http://i.imgur.com/Lfv18Sb.jpg', 'http://i.imgur.com/tmVJtna.jpg', 'http://i.imgur.com/ZfFAkWZ.jpg'],
+       images: [require('../assets/DSC00284.jpg'), require('../assets/DSC00161.jpg'), require('../assets/DSC00122.jpg')],
         currentNumber: 0
     }
   },

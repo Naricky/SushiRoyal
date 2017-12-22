@@ -5,10 +5,10 @@
       <hr>
         <div class="descriptionBox">
         <p class="descriptionTitle"> Kanzo's Story</p>
-        <p class="descriptionDetail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit risus vitae semper accumsan. Suspendisse efficitur dui vitae leo ornare placerat. Curabitur tempus euismod ante vel finibus. Nam euismod ipsum eget tellus dictum, a dictum nulla consectetur. Nam condimentum pulvinar dui sit amet dignissim. </p>
+        <p class="descriptionDetail"> Kanzo Sushi is a fun and welcoming place to enjoy simple, fresh and delicious sushi crafted using a combination of Japanese ingredients and fresh products. <br /><br /> Come for takeouts! </p>
         </div>
         <div class="descriptonBox2">
-          <img class="imageAboutUs" src="../assets/chef.jpg"></img>
+          <img class='images' :src="images[currentNumber % images.length]  " />
         </div>
     </div>
 
@@ -17,7 +17,32 @@
 
 <script>
 export default {
+  data () {
+    return {
+       images: [require('../assets/1.jpg'), require('../assets/2.jpg'), require('../assets/3.jpg'), require('../assets/4.jpg'), require('../assets/5.jpg'), require('../assets/6.jpg'), require('../assets/7.jpg')],
+        currentNumber: 0
+    }
+  },
+  beforeMount()  {
+        this.startRotation();
+    },
 
+    methods: {
+        startRotation: function() {
+            this.timer = setInterval(this.next, 6000);
+            console.log('rotation happens')
+        },
+
+        stopRotation: function() {
+            clearTimeout(this.timer);
+            this.timer = null;
+        },
+
+         next: function() {
+            this.currentNumber += 1
+        }
+
+    }
 }
 </script>
 
@@ -77,6 +102,11 @@ background-color: #FFF;
     text-align: left;
     font-size: 50px;
 
+  }
+
+  .images {
+    height: 25%;
+    width: 25%;
   }
 
 @media all and (max-width: 1024px) and (min-width: 568px){

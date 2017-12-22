@@ -7,52 +7,51 @@
         <ul id="messages">
           <li>
             <div class="infos">
-            <img src="http://farm3.staticflickr.com/2721/4531285963_cd28f61b16_q.jpg" alt=""  title="by tresMunkeys" />
-            <a href="https://twitter.com/webodream" class="sprite twitter">@webodream</a>
-            <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
-
+            <img src="http://farm3.staticflickr.com/2721/4531285963_cd28f61b16_q.jpg" alt=""  title="customer" />
+            <a href="https://twitter.com/webodream" class="sprite twitter">anita</a>
+            <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">anita</a>
             </div>
             <div class="content">
               <h3>
-                Edmundo I. Jacobi
-                <b>webdeveloper</b>
+                Anita Young
+                <b>Zomato Reviewer</b>
               </h3>
               <p>
-                Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillumLorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.
+                Used to come here after school with my sister. We both loved the Baked Scallop Roll (prawn, cream cheese, avocado, tobiko, crab, and BBQ scallop on top.) It had a very nice BBQ flavour.
               </p>
             </div>
           </li>
           <li>
             <div class="infos">
-              <img src="http://farm3.staticflickr.com/2617/3873098259_61c446da22_q.jpg" alt="" title="by tresMunkeys" />
-              <a href="https://twitter.com/webodream" class="sprite twitter">@webodream</a>
-              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
+              <img src="http://farm3.staticflickr.com/2617/3873098259_61c446da22_q.jpg" alt="" title="customer" />
+              <a href="https://twitter.com/webodream" class="sprite twitter">vancity</a>
+              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">vancity</a>
            </div>
            <div class="content">
             <h3>
-            Lisa J. Escoto
-            <b>webdesigner </b>
+            DineVancity
+            <b>Food Reviewer</b>
             </h3>
             <p>
-              Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillum in occaecat adipisicing ullamco cillum in occaecat proident commodo.</a>.
+              The service was great and they were very patient. My friends and I took about 20 minutes arguing about what to order because there were so many grey choices! The server came multiple times to take our order and was happily at the task. The food came quick and was great. It's a good deal for the part trays!</a>.
             </p>
             </div>
           </li>
 
            <li>
             <div class="infos">
-              <img src="http://farm4.staticflickr.com/3412/3446830982_c8b55cc7e8_q.jpg" alt="" title="by tresMunkeys" />
-              <a href="https://twitter.com/webodream" class="sprite twitter">@webodream</a>
-              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">depot.webdesigner</a>
+              <img src="../assets/ricky.jpg" alt="" title="customer" />
+              <a href="https://www.linkedin.com/in/ricky-lee-27267b50/" class="sprite twitter">@webodream</a>
+              <a href="https://www.facebook.com/na.ricky" class="sprite facebook">depot.webdesigner</a>
             </div>
           <li>
           <div class="content">
             <h3>
-              Benita M. Futral
-              <b>CEO &amp; Founder</b>
+              Ricky Lee
+              <b>Web Developer</b>
             </h3>
             <p>
-              Lorem ipsum non minim Excepteur Duis sunt labore ut laborum sit ullamco sed ex.Lorem ipsum dolor adipisicing ullamco cillum
+              I usually drop by this place for lunch. And wow sushi is just amazing!
             </p>
           </div>
           </li>
@@ -78,7 +77,7 @@ export default {
   .backgroundCommentImage {
   height: 1000px;
   opacity: 1;
-  background: url("../assets/commentsback.jpg") no-repeat center center fixed;
+  background: url("../assets/DSC00221.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

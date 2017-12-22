@@ -40,7 +40,7 @@
 
 <script>
 
-document.title = "Ganso Sushi"
+document.title = "Kanzo Sushi"
 import Intro from './components/Intro'
 import AboutUs from './components/AboutUs'
 import CustomerComment from './components/CustomerComment'
@@ -121,5 +121,8 @@ b {
   padding: 0px 0px 0px 0px;
 }
 
+#headerTitle {
+  text-align: center;
+}
 
 </style>

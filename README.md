@@ -11,3 +11,4 @@ This is Freelancing website under construction for SushiRoyal Ltd. It is SPA in 
 # Contributor
 
 Ricky Lee
+Kevin Kim
