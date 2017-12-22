@@ -5,88 +5,16 @@
       <hr>
       <body>
   <h1>Favorites</h1>
-    <div class="description">
-      <image-slider>
-        <p>
-          <a @click="prev">Previous</a> || <a @click="next">Next</a>
-        </p>
-        <div v-for="number in [currentNumber]"
-             transition="fade">
-          <img
-              :src="images[Math.abs(currentNumber) % images.length]"
-              v-on:mouseover="stopRotation"
-              v-on:mouseout="startRotation"
-          />
-        </div>
-      </image-slider>
-    </div>
-    
-    <!-- <img class="food" src="../assets/menu1.jpg" />
-    <img class="food" src="../assets/menu2.jpg" /> -->
-        <!-- <p>Ins: deep fried avocado, spicy tuna</p>
-        <p>Top: unagi, house wine, spicy mayo, yam flake, sauce</p> -->
-        
+   <!-- TODO for Kevin: So I retrieved back Menu template. This would be really good practice for you so I left it blank with basic datset structure and instructions in case you get lost.. ( Seems like you were going to build html file for all the rolls, but that is not optimum.)
 
-        <!-- <h2> Monkey Brain Roll </h2>
-        <img class="food" src="../assets/DSC00012-2.jpg" />
-        <h2> Crispy Roll </h2>
-        <img class="food" src="../assets/DSC00031.jpg" />
-        <h2> Red Dragon Roll </h2>
-        <img class="food" src="../assets/DSC00092.jpg" />
-        <h2> Crunch Roll </h2>
-        <img class="food" src="../assets/DSC00094.jpg" />
-        <h2> Canucks Roll </h2>
-        <img class="food" src="../assets/DSC00149.jpg" /> -->
-    
-    <!-- <tr>
-      <td>  
-        
-      </td>
-      <td>
-        <h2>Miso Soup</h2>
-Five large shrimp served with our zesty cocktail sauce $6.95
-      </td>
-      <td>
-        <h2>Crab Cakes</h2>
-Homemade crab cakes with tender lump crab meat and just the right amount of spices and seasonings served with Remoulade sauce $7.95
-      </td>
+  a) You can populate images and descriptions using v-for. Example would be:
+    <aa v-for="response in responsess">
+        {{response.answer}}</aa>. It's not foreach for vue. Vue doc has great read on it. Once you populate these vue dataset structure..
+  b) https://vuejs.org/v2/examples/modal.html
+     What you are trying to do is called 'modal' ; in simple, a popup box. This allows you to do what you described to me in regards menus. Quite straight forward ; play around with the example given above.
+  c) When you make your first modal work, make sure to wrap them with specific class/id to make sure one css applies to all modals. Always practie DRY coding ( although, I wasn't aware of this when this side project was started lol).
 
-    </tr>
-    <tr>
-      <td>
-        <h2>Artichoke French</h2>
-Egg-battered and served in a sherry, butter & lemon sauce $6.95
-      </td>
-      <td>
-        <h2>Shrimp Alexander</h2>
-Jumbo shrimp wrapped in bacon and topped with melted Feta $7.95</td>
-    </tr>
-    <tr>
-      <td>
-        <h2>Artichokes Alexander</h2>
-Artichokes wrapped in bacon and topped with melted Feta cheese $6.95
-      </td>
-      <td>
-        <h2>Southern Fried Asparagus</h2>
-Lightly battered & deep fried, served with Ranch dressing $5.95
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h2>Mozzarella Sticks</h2>
-Mozarella cheese, lightly battered and deep-fried, served with our traditional red sauce $5.95
-      </td>
-      <td>
-        <h2>Garlic Bread</h2>
-Topped with Mozarella and served with our traditional red sauce $4.95
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <h2>Chicken Tenders</h2>
-Marinated tenderloins covered with our special mildly spiced breadcrumbs, deep-fried to a golden brown & served with dipping sauce $5.95
-      </td>
-    </tr> -->
+     -->
   <div class="download">
           <p>
              <a href="../assets/takeout.pdf" class="button" download>Download Menu</a>
@@ -101,30 +29,21 @@ Marinated tenderloins covered with our special mildly spiced breadcrumbs, deep-f
 export default {
   data () {
     return {
-      el: 'image-slider',
-      data: {
-          images: [require('../assets/DSC00012-2.jpg'), require('../assets/DSC00031.jpg'), require('../assets/DSC00092.jpg'), require('../assets/DSC00094.jpg'), require('../assets/DSC00149.jpg')],
-          currentNumber: 0
-      },
+      images: [require('../assets/DSC00012-2.jpg'), require('../assets/DSC00031.jpg'), require('../assets/DSC00092.jpg'), require('../assets/DSC00094.jpg'), require('../assets/DSC00149.jpg')],
+
+     descriptions:  [
+                      [ { id: 1, description :'description 1'},
+                        { id: 2, description :'description 2'},
+                        { id: 3, description :'description 3'},
+                        { id: 4, description :'description 4'},
+                        { id: 5, description :'description 5'},
+                      ],
+                    ],
     }
   },
-  ready: function () {
-        this.startRotation();
-    },
 
   methods: {
-        startRotation: function() {
-            this.timer = setInterval(this.next, 3000);
-        },
 
-        stopRotation: function() {
-            clearTimeout(this.timer);
-            this.timer = null;
-        },
-
-        next: function() {
-            this.currentNumber += 1
-        }
   }
 }
 </script>
@@ -165,7 +84,7 @@ export default {
   opacity: 1;
   position: absolute;
   }
-  
+
   .fade-enter, .fade-leave {
   opacity: 0;
   visibility: hidden;

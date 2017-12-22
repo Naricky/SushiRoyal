@@ -12,6 +12,8 @@
         </div>
     </div>
 
+<!-- TODO for Kevin: a) Pictures while rotating breaks out of the DOM. Check the rotation and adjust css. b) Is it neccesary to make this picture rorate? Seems like it's only piling up the runtime and is not neccesary. As mentioned in other TODO, if you can compress the pic, then this would be viable but if not, just get rid of multiple picture rotation for runtime's sake. -->
+
   </div>
 </template>
 

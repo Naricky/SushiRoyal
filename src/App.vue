@@ -1,4 +1,3 @@
-<!-- var Scrollactive = require('vue-scrollactive'); -->
 
 <template>
 

@@ -2,28 +2,12 @@
   <div>
     <div class="backgroundGalleryImage">
       <div class="catchyTitle"> ͏Gallery </div>
-      <!-- <div v-for="number in [currentNumber]" transition="fade">
-        <img class='yum' :src="yum[currentNumber % yum.length]  " />
-      </div> -->
+
       <hr>
         <div class="descriptionBox">
           <figure>
-            <!-- <img class="food" src="../assets/3.jpg" />
-            <img class="food" src="../assets/4.jpg" />
-            <img class="food" src="../assets/6.jpg" />
-            <img class="food" src="../assets/7.jpg" /> -->
             <img class="food" src="../assets/DSC00012-2.jpg" />
-            <img class="food" src="../assets/DSC00024.jpg" />
-            <img class="food" src="../assets/DSC00031.jpg" />
-            <img class="food" src="../assets/DSC00038.jpg" />
-            <img class="food" src="../assets/DSC00092.jpg" />
-            <img class="food" src="../assets/DSC00094.jpg" />
-            <img class="food" src="../assets/DSC00135.jpg" />
-            <img class="food" src="../assets/DSC00149.jpg" />
-            <img class="food" src="../assets/DSC00196.jpg" />
-            <img class="food" src="../assets/DSC00221.jpg" />
-            <img class="food" src="../assets/DSC00284.jpg" />
-            <img class="food" src="../assets/DSC00292.jpg" />
+            <!-- TODO for Kevin: If all the pictures are enlisted with HD, there seems like runtime problem. ( It takes about 20 seconds to load the page. This is too much. If you test out with one picture with google dev tool ( go to network, and when you load the page, it will show how much seconds which components are taking too long. Main problem here are pictures are of too high quality which takes up about ~20mb per picture. https://stackoverflow.com/questions/4504497/how-to-reduce-size-of-largeish-image-for-web-page-download   Couple of solutions here. For now, I've removed pictures so it runs smoothly on local machine.)) -->
           </figure>
         </div>
     </div>
@@ -32,32 +16,14 @@
 
 <script>
 export default {
-  // data () {
-  //   return {
-  //      yum: [require('../assets/DSC00012-2.jpg'), require('../assets/DSC00024.jpg'), require('../assets/DSC00031.jpg'), require('../assets/DSC00038.jpg'), require('../assets/DSC00092.jpg'), require('../assets/DSC00094.jpg'), require('../assets/DSC00122.jpg'), require('../assets/DSC00135.jpg'), require('../assets/DSC00149.jpg'), require('../assets/DSC00161.jpg'), require('../assets/DSC00196.jpg'), require('../assets/DSC00221.jpg'), require('../assets/DSC00284.jpg'), require('../assets/DSC00292.jpg'),],
-  //       currentNumber: 0
-  //   }
-  // },
-  // beforeMount()  {
-  //       this.startRotation();
-  //   },
+  data () {
+    return {
 
-  //   methods: {
-  //       startRotation: function() {
-  //           this.timer = setInterval(this.next, 6000);
-  //           console.log('rotation happens')
-  //       },
+    }
+  },
+    methods: {
 
-  //       stopRotation: function() {
-  //           clearTimeout(this.timer);
-  //           this.timer = null;
-  //       },
-
-  //        next: function() {
-  //           this.currentNumber += 1
-  //       }
-
-  //   }
+    }
 }
 </script>
 
@@ -65,7 +31,6 @@ export default {
 <style scoped>
 
   .backgroundGalleryImage {
-    /*background-color: #F5F5EC;*/
     background-color: black;
     height:550px;
     -webkit-background-size: cover;

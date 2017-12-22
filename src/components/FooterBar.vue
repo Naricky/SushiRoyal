@@ -61,7 +61,7 @@
   </div>
   </div>
 </template>
-
+<!-- TODO for Kevin: a) Footer breaks. But, deal with this after all the other things are handled on TODO list I enlisted. -->
 <script>
 export default {
 

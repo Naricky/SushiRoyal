@@ -61,6 +61,9 @@
   </div>
 </template>
 
+<!-- TODO for Kevin: a) Don't use my name xD. b) Try using Dine Vancity kind of thing : linked their facebook/twitter in sync with it. I was thinking about this and putting real person's fb/twitter and their picture might not be a best idea. -->
+
+
 <script>
 export default {
 
