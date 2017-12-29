@@ -1,30 +1,44 @@
 <template>
-  <div>
     <div class="backgroundGalleryImage">
       <div class="catchyTitle"> ͏Gallery </div>
-
       <hr>
-        <div class="descriptionBox">
-          <figure>
-            <img class="food" src="../assets/DSC00012-2.jpg" />
-            <!-- TODO for Kevin: If all the pictures are enlisted with HD, there seems like runtime problem. ( It takes about 20 seconds to load the page. This is too much. If you test out with one picture with google dev tool ( go to network, and when you load the page, it will show how much seconds which components are taking too long. Main problem here are pictures are of too high quality which takes up about ~20mb per picture. https://stackoverflow.com/questions/4504497/how-to-reduce-size-of-largeish-image-for-web-page-download   Couple of solutions here. For now, I've removed pictures so it runs smoothly on local machine.)) -->
-          </figure>
-        </div>
+        <body>
+         <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
+       </body>
     </div>
-  </div>
 </template>
 
 <script>
+import Coverflow from './slider/Coverflow'
+
 export default {
-  data () {
-    return {
-
-    }
-  },
-    methods: {
-
+   name: 'app',
+    data () {
+      return {
+        coverList: [
+          {
+            cover: require('../assets/DSC00284.jpg'),
+            title: ''
+          }, {
+            cover: require('../assets/DSC00161.jpg'),
+            title: ''
+          }, {
+            cover: require('../assets/DSC00122.jpg'),
+            title: ''
+          }
+        ],
+        
+        codeTwo: `
+        <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
+        `,
+       
+      }
+    },
+    components: {
+      Coverflow
     }
 }
+
 </script>
 
 
@@ -33,10 +47,7 @@ export default {
   .backgroundGalleryImage {
     background-color: black;
     height:550px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    width: 100%;
   }
 
   .catchyTitle {
@@ -46,10 +57,13 @@ export default {
     font-size: 50px;
   }
 
-  .food {
-    height: 15%;
-    width: 15%;
+  .images {
+    height: 75%;
+    width: 75%;
   }
+
+
+
 </style>
 
 

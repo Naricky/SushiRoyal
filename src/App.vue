@@ -33,7 +33,7 @@
     <div id='gallery'><Gallery/></div>
     <div id='contact'><FooterBar/></div>
 
-
+<gallery />
   </div>
 </template>
 
