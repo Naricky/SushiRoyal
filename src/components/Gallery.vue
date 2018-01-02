@@ -2,9 +2,9 @@
     <div class="backgroundGalleryImage">
       <div class="catchyTitle"> ͏Gallery </div>
       <hr>
-          <div>
-            <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
-          </div>
+        <body>
+         <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
+       </body>
     </div>
 </template>
 
@@ -27,6 +27,8 @@ export default {
             title: ''
           }
         ],
+
+
       }
     },
     components: {
@@ -41,7 +43,7 @@ export default {
 
   .backgroundGalleryImage {
     background-color: black;
-    height:100%;
+    height: 100%;
     width: 100%;
   }
 

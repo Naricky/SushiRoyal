@@ -73,6 +73,10 @@ export default {
 
 <style scoped>
 
+.phone, .address {
+  text-align: left;
+}
+
 .table {
   width: 50%;
   float: left;
@@ -85,7 +89,7 @@ export default {
 
 .phoneAndAddress{
   text-align: center;
-  margin-right: 200px;
+  margin-right: 150px;
 }
 
 a {
