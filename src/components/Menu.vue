@@ -4,7 +4,17 @@
       <div class="catchyTitle"> Menu</div>
       <hr>
         <body>
-          <coverflow :coverList="coverList" :coverWidth="260" :index="2"></coverflow>
+           <div>
+    <gallery :images="images" :index="index" @close="index = null"></gallery>
+    <div
+      class="image"
+      v-for="(image, imageIndex) in images"
+      :key="imageIndex"
+      @click="index = imageIndex"
+      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+    ></div>
+  </div>
+          <!-- <coverflow :coverList="coverList" :coverWidth="260" :index="2"></coverflow> -->
             <div class="download">
               <p>
                  <a href="../assets/takeout.pdf" class="button" download>Download Menu</a>
@@ -16,47 +26,69 @@
 </template>
 
 <script>
-import Coverflow from './slider/Coverflow'
+import VueGallery from './slider/gallery';
 
 export default {
- name: 'app',
-    data () {
+    data: function () {
       return {
-        coverList: [
-          {
-            cover: require('../assets/DSC00012-2.jpg'),
-            title: 'Monkey Brain Roll'
-          }, {
-            cover: require('../assets/DSC00031.jpg'),
-            title: 'Crispy Roll'
-          }, {
-            cover: require('../assets/DSC00092.jpg'),
-            title: 'Red Dragon Roll'
-          }, {
-            cover: require('../assets/DSC00094.jpg'),
-            title: 'Crunch Roll'
-          }, {
-            cover: require('../assets/DSC00149.jpg'),
-            title: 'Canucks Roll'
-          }, {
-            cover: require('../assets/menu1.jpg'),
-            title: 'Menu'
-          }, {
-            cover: require('../assets/menu2.jpg'),
-            title: 'Menu'
-          }
+        images: [
+          require('../assets/DSC00012-2.jpg'),
+          require('../assets/DSC00031.jpg'),
+          require('../assets/DSC00092.jpg'),
+          require('../assets/DSC00094.jpg'),
+          require('../assets/DSC00149.jpg'),
+          require('../assets/menu1.jpg'),
+          require('../assets/menu2.jpg')
         ],
-        
-        codeOne: `
-        <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
-        `,
-       
-      }
+        index: null
+      };
     },
+ 
     components: {
-      Coverflow
-    }
-}
+      'gallery': VueGallery
+    },
+  }
+// import Coverflow from './slider/Coverflow'
+
+// export default {
+//  name: 'app',
+//     data () {
+//       return {
+//         coverList: [
+//           {
+//             cover: require('../assets/DSC00012-2.jpg'),
+//             title: 'Monkey Brain Roll'
+//           }, {
+//             cover: require('../assets/DSC00031.jpg'),
+//             title: 'Crispy Roll'
+//           }, {
+//             cover: require('../assets/DSC00092.jpg'),
+//             title: 'Red Dragon Roll'
+//           }, {
+//             cover: require('../assets/DSC00094.jpg'),
+//             title: 'Crunch Roll'
+//           }, {
+//             cover: require('../assets/DSC00149.jpg'),
+//             title: 'Canucks Roll'
+//           }, {
+//             cover: require('../assets/menu1.jpg'),
+//             title: 'Menu'
+//           }, {
+//             cover: require('../assets/menu2.jpg'),
+//             title: 'Menu'
+//           }
+//         ],
+        
+//         codeOne: `
+//         <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
+//         `,
+       
+//       }
+//     },
+//     components: {
+//       Coverflow
+//     }
+// }
 </script>
 
 

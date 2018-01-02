@@ -135,7 +135,7 @@ export default {
       for (var j = 0; j < imgs.length; ++j) {
         imgs[j].style.position = 'absolute'
         imgs[j].style.width = imgSize + 'px'
-        imgs[j].style.height = 'auto'
+        imgs[j].style.height = 'px'
         imgs[j].style.bottom = '60px'
 
         if (!shadow && imgShadow) {
