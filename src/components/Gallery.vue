@@ -27,11 +27,8 @@ export default {
             title: ''
           }
         ],
-        
-        codeOne: `
-        <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
-        `,
-       
+
+
       }
     },
     components: {
@@ -46,7 +43,7 @@ export default {
 
   .backgroundGalleryImage {
     background-color: black;
-    height:550px;
+    height:100%;
     width: 100%;
   }
 
