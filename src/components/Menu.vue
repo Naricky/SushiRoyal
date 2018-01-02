@@ -5,15 +5,15 @@
       <hr>
         <body>
            <div>
-    <gallery :images="images" :index="index" @close="index = null"></gallery>
-    <div
-      class="image"
-      v-for="(image, imageIndex) in images"
-      :key="imageIndex"
-      @click="index = imageIndex"
-      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
-    ></div>
-  </div>
+              <gallery :images="images" :index="index" @close="index = null"></gallery>
+                <div
+                  class="image"
+                  v-for="(image, imageIndex) in images"
+                  :key="imageIndex"
+                  @click="index = imageIndex"
+                  :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+                >123</div>
+            </div>
           <!-- <coverflow :coverList="coverList" :coverWidth="260" :index="2"></coverflow> -->
             <div class="download">
               <p>

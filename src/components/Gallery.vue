@@ -2,9 +2,9 @@
     <div class="backgroundGalleryImage">
       <div class="catchyTitle"> ͏Gallery </div>
       <hr>
-        <body>
-         <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
-       </body>
+          <div>
+            <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
+          </div>
     </div>
 </template>
 
@@ -28,9 +28,9 @@ export default {
           }
         ],
         
-        codeOne: `
-        <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
-        `,
+        // codeOne: `
+        // <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
+        // `,
        
       }
     },
