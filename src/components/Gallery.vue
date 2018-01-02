@@ -28,9 +28,6 @@ export default {
           }
         ],
         
-        // codeOne: `
-        // <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
-        // `,
        
       }
     },

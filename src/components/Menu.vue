@@ -5,21 +5,19 @@
       <hr>
         <body>
            <div>
-              <gallery :images="images" :index="index" @close="index = null"></gallery>
-                <div
-                  class="image"
-                  v-for="(image, imageIndex) in images"
-                  :key="imageIndex"
-                  @click="index = imageIndex"
-                  :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
-                >123</div>
-            </div>
-          <!-- <coverflow :coverList="coverList" :coverWidth="260" :index="2"></coverflow> -->
-            <div class="download">
-              <p>
-                 <a href="../assets/takeout.pdf" class="button" download>Download Menu</a>
-              </p>
-            </div>
+    <gallery :images="images" :index="index" @close="index = null"></gallery>
+
+    <div class='wrapper'>
+    <div
+      class="image"
+      v-for="(image, imageIndex) in images"
+      :key="imageIndex"
+      @click="index = imageIndex"
+      :style="{ backgroundImage: 'url(' + image + ')', width: '300px', height: '200px' }"
+    ><img class='images' :src="images[currentNumber % images.length]  " /></div>
+  </div>
+  </div>
+
         </body>
    </div>
  </div>
@@ -43,59 +41,24 @@ export default {
         index: null
       };
     },
- 
+
     components: {
       'gallery': VueGallery
     },
   }
-// import Coverflow from './slider/Coverflow'
 
-// export default {
-//  name: 'app',
-//     data () {
-//       return {
-//         coverList: [
-//           {
-//             cover: require('../assets/DSC00012-2.jpg'),
-//             title: 'Monkey Brain Roll'
-//           }, {
-//             cover: require('../assets/DSC00031.jpg'),
-//             title: 'Crispy Roll'
-//           }, {
-//             cover: require('../assets/DSC00092.jpg'),
-//             title: 'Red Dragon Roll'
-//           }, {
-//             cover: require('../assets/DSC00094.jpg'),
-//             title: 'Crunch Roll'
-//           }, {
-//             cover: require('../assets/DSC00149.jpg'),
-//             title: 'Canucks Roll'
-//           }, {
-//             cover: require('../assets/menu1.jpg'),
-//             title: 'Menu'
-//           }, {
-//             cover: require('../assets/menu2.jpg'),
-//             title: 'Menu'
-//           }
-//         ],
-        
-//         codeOne: `
-//         <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#ddd"></coverflow>
-//         `,
-       
-//       }
-//     },
-//     components: {
-//       Coverflow
-//     }
-// }
 </script>
 
 
 <style scoped>
 
+  .body {
+    size: 100%;
+  }
+
+
   .backgroundMenuImage {
-    height: 500px;
+    height: 100%;
     width: 100%;
     background-color: white;
   }
@@ -107,14 +70,17 @@ export default {
     font-size: 50px;
   }
 
-   .images {
+   .image {
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #ebebeb;
+    margin: 5px;
     height: 50%;
-    width: 50%;
-   }
+  }
 
-  
 
 
 </style>
-
-
