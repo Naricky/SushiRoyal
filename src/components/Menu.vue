@@ -81,8 +81,4 @@ export default {
     height: 50%;
   }
 
-
-
 </style>
-
-
