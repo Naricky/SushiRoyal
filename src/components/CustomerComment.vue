@@ -8,13 +8,11 @@
           <li>
             <div class="infos">
             <img src="http://farm3.staticflickr.com/2721/4531285963_cd28f61b16_q.jpg" alt=""  title="customer" />
-            <a href="https://twitter.com/webodream" class="sprite twitter">anita</a>
-            <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">anita</a>
             </div>
             <div class="content">
               <h3>
                 Anita Young
-                <b>Zomato Reviewer</b>
+                <b>Vancouver, BC</b>
               </h3>
               <p>
                 Used to come here after school with my sister. We both loved the Baked Scallop Roll (prawn, cream cheese, avocado, tobiko, crab, and BBQ scallop on top.) It had a very nice BBQ flavour.
@@ -24,13 +22,11 @@
           <li>
             <div class="infos">
               <img src="http://farm3.staticflickr.com/2617/3873098259_61c446da22_q.jpg" alt="" title="customer" />
-              <a href="https://twitter.com/webodream" class="sprite twitter">vancity</a>
-              <a href="https://www.facebook.com/groups/115089745169149" class="sprite facebook">vancity</a>
            </div>
            <div class="content">
             <h3>
             DineVancity
-            <b>Food Reviewer</b>
+            <b>Vancouver, BC</b>
             </h3>
             <p>
               The service was great and they were very patient. My friends and I took about 20 minutes arguing about what to order because there were so many grey choices! The server came multiple times to take our order and was happily at the task. The food came quick and was great. It's a good deal for the part trays!</a>.
@@ -40,18 +36,18 @@
 
            <li>
             <div class="infos">
-              <img src="../assets/ricky.jpg" alt="" title="customer" />
-              <a href="https://www.linkedin.com/in/ricky-lee-27267b50/" class="sprite twitter">@webodream</a>
-              <a href="https://www.facebook.com/na.ricky" class="sprite facebook">depot.webdesigner</a>
+              <img src="../assets/introback.jpg" alt="" title="customer" />
             </div>
           <li>
           <div class="content">
             <h3>
-              Ricky Lee
-              <b>Web Developer</b>
+              Steven K.
+              <b>Vancouver, BC</b>
             </h3>
             <p>
-              I usually drop by this place for lunch. And wow sushi is just amazing!
+              I eat here quite often. Sometimes for dinner, but usually for a quick lunch during work. The sushi is great and the service/preparation is fast. I recommend for work people who need a quick lunch. 
+
+              With that said, their lunch time can get busy and sometimes you have to wait to be seated, but usually not more than 5-10 minutes. Turnover of tables is fast and the food comes out fast.
             </p>
           </div>
           </li>
@@ -60,9 +56,6 @@
     </div>
   </div>
 </template>
-
-<!-- TODO for Kevin: a) Don't use my name xD. b) Try using Dine Vancity kind of thing : linked their facebook/twitter in sync with it. I was thinking about this and putting real person's fb/twitter and their picture might not be a best idea. -->
-
 
 <script>
 export default {

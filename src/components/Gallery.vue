@@ -17,6 +17,21 @@ export default {
       return {
         coverList: [
           {
+            cover: require('../assets/DSC00012-2.jpg'),
+            title: 'Monkey Brain Roll'
+          }, {
+            cover: require('../assets/DSC00031.jpg'),
+            title: 'Crispy Roll'
+          }, {
+            cover: require('../assets/DSC00092.jpg'),
+            title: 'Red Dragon Roll'
+          }, {
+            cover: require('../assets/DSC00094.jpg'),
+            title: 'Crunch Roll'
+          }, {
+            cover: require('../assets/DSC00149.jpg'),
+            title: 'Canucks Roll'
+          }, {
             cover: require('../assets/DSC00284.jpg'),
             title: ''
           }, {

@@ -73,8 +73,12 @@ export default {
 
 <style scoped>
 
+.openHour {
+  color: #FFFF00;
+}
+
 .phone, .address {
-  text-align: left;
+  text-align: center;
 }
 
 .table {
@@ -84,7 +88,9 @@ export default {
 }
 
 .other {
-  float:right;
+  width: 50%;
+  float: right;
+  text-align: center;
 }
 
 .phoneAndAddress{
@@ -96,7 +102,7 @@ a {
   font-family: 'TradeGothicW01-Extended', sans-serif;
     text-transform: uppercase;
     margin: 0;
-    color: #d8964c;
+    color: #FFFF00;
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -144,4 +150,9 @@ table.table-plain td:nth-child(2) {
   color: #bcbcbc;
   text-align: center;
 }
+
+.line {
+  text-align: center;
+}
+
 </style>

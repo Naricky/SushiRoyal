@@ -134,8 +134,8 @@ export default {
 
       for (var j = 0; j < imgs.length; ++j) {
         imgs[j].style.position = 'absolute'
-        imgs[j].style.width = imgSize + 'px'
-        imgs[j].style.height = '150px'
+        imgs[j].style.width = '60%'
+        imgs[j].style.height = '60%'
         imgs[j].style.bottom = '60px'
 
         if (!shadow && imgShadow) {
@@ -208,7 +208,7 @@ export default {
         }
       }
 
-      this.displayIndex(imgSize, spacing, c.scrollLeft, imgs, +c.dataset.index, flat, parseInt(c.style.width), titleBox)
+      this.displayIndex(imgSize, spacing, c.scrollLeft, imgs, + c.dataset.index, flat, parseInt(c.style.width), titleBox)
     }
   },
   mounted() {

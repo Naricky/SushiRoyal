@@ -30,11 +30,11 @@ export default {
     data: function () {
       return {
         images: [
-          require('../assets/DSC00012-2.jpg'),
-          require('../assets/DSC00031.jpg'),
-          require('../assets/DSC00092.jpg'),
-          require('../assets/DSC00094.jpg'),
-          require('../assets/DSC00149.jpg'),
+          // require('../assets/DSC00012-2.jpg'),
+          // require('../assets/DSC00031.jpg'),
+          // require('../assets/DSC00092.jpg'),
+          // require('../assets/DSC00094.jpg'),
+          // require('../assets/DSC00149.jpg'),
           require('../assets/menu1.jpg'),
           require('../assets/menu2.jpg')
         ],
