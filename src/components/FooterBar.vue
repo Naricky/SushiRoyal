@@ -8,42 +8,42 @@
       <tbody class="line">
         <tr class="Monday">
           <td>Monday: </td>
-          <td>  11:00am - 9:00pm</td>
+          <td>  11:00am - 10:00pm</td>
           <td></td>
         </tr>
       <tr class="Tuesday">
         <td>Tuesday: </td>
-        <td>  11:00am - 9:00pm</td>
+        <td>  11:00am - 10:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Wednesday">
         <td>Wednesday: </td>
-        <td>  11:00am - 9:00pm</td>
+        <td>  11:00am - 10:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Thursday">
         <td>Thursday: </td>
-        <td>  11:00am - 9:30pm</td>
+        <td>  11:00am - 10:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Friday">
         <td>Friday: </td>
-        <td>  11:00am - 9:30pm</td>
+        <td>11:00am - 10:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Saturday">
         <td>Saturday: </td>
-        <td>  11:00am - 9:30pm</td>
+        <td>  11:00am - 10:00pm</td>
         <td></td>
       </tr>
 
       <tr class="Sunday">
         <td>Sunday: </td>
-        <td>  11:00am - 9:30pm</td>
+        <td>  11:00am - 10:00pm</td>
         <td></td>
       </tr>
   </tbody>
@@ -52,11 +52,11 @@
   <div class='other'>
     <a class='phoneAndAddress'> Phone Number and Address </a>
     <div class='phone'>
-      778-379-3837 /
-      778-379-3469
+      604-568-4500 /
+      604-558-4994
     </div>
     <div class='address'>
-      2893 Grandview Hwy, Vancouver, BC, V5M 2E1
+      82 Keefer Place (across International Village), Vancouver, BC, V6B 0C9
     </div>
   </div>
   </div>
