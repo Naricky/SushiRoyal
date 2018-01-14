@@ -7,7 +7,7 @@
         <ul id="messages">
           <li>
             <div class="infos">
-            <img src="http://farm3.staticflickr.com/2721/4531285963_cd28f61b16_q.jpg" alt=""  title="customer" />
+              <img src="http://farm3.staticflickr.com/2721/4531285963_cd28f61b16_q.jpg" alt=""  title="customer" />
             </div>
             <div class="content">
               <h3>
@@ -31,7 +31,7 @@
             <p>
               The service was great and they were very patient. My friends and I took about 20 minutes arguing about what to order because there were so many grey choices! The server came multiple times to take our order and was happily at the task. The food came quick and was great. It's a good deal for the part trays!</a>.
             </p>
-            </div>
+          </div>
           </li>
 
            <li>
@@ -265,7 +265,4 @@ body {
   .backgroundCommentImage {height: 1200px; }
 }
 
-
 </style>
-
-

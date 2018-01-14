@@ -16,15 +16,9 @@
       <b v-scroll-to="'#menu'">Menu</b>
       <b v-scroll-to="'#gallery'">Gallery</b>
       <b v-scroll-to="'#contact'">Contact Us</b>
-
-    </div>
-
+        </div>
     </h1>
-
-
-
   </div>
-
 
     <div id='home'><Intro/></div>
     <div id='about'><AboutUs/></div>
@@ -33,7 +27,8 @@
     <div id='gallery'><Gallery/></div>
     <div id='contact'><FooterBar/></div>
 
-  </div>
+</div>
+
 </template>
 
 <script>
@@ -53,7 +48,6 @@ export default {
   },
 
 }
-
 
 </script>
 
@@ -84,11 +78,10 @@ p {
   line-height: 1.5;
 }
 
-
-
 b {
   font-size: 20px;
 }
+
 #header {
   margin-bottom: 0px;
   padding-top: 0px;

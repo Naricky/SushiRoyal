@@ -4,16 +4,13 @@
       <div class="catchyTitle"> ͏Ab͏o͏u͏t ͏Us</div>
       <hr>
         <div class="descriptionBox">
-        <p class="descriptionTitle"> Kanzo's Story</p>
-        <p class="descriptionDetail"> Kanzo Sushi is a fun and welcoming place to enjoy simple, fresh and delicious sushi crafted using a combination of Japanese ingredients and fresh products. <br /><br /> Come for takeouts! </p>
+          <p class="descriptionTitle"> Kanzo's Story</p>
+          <p class="descriptionDetail"> Kanzo Sushi is a fun and welcoming place to enjoy simple, fresh and delicious sushi crafted using a combination of Japanese ingredients and fresh products. <br /><br /> Come for takeouts! </p>
         </div>
         <div class="descriptonBox2">
           <img class='images' :src="images[currentNumber % images.length]  " />
         </div>
     </div>
-
-<!-- TODO for Kevin: a) Pictures while rotating breaks out of the DOM. Check the rotation and adjust css. b) Is it neccesary to make this picture rorate? Seems like it's only piling up the runtime and is not neccesary. As mentioned in other TODO, if you can compress the pic, then this would be viable but if not, just get rid of multiple picture rotation for runtime's sake. -->
-
   </div>
 </template>
 
@@ -46,11 +43,9 @@ export default {
          next: function() {
             this.currentNumber += 1
         }
-
     }
 }
 </script>
-
 
 <style scoped>
 
@@ -58,6 +53,7 @@ export default {
     font-family: serif;
     margin-left: 150px;
   }
+
   .descriptionBox {
     margin-top: 20px;
     padding-right: 100px;
@@ -87,18 +83,13 @@ export default {
     font-style: italic;
     width: 500px;
 
-
   }
 
   .backgroundAboutUsImage {
   height: 500px;
   opacity: 1;
-  /*background: url("../assets/aboutusback.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-background-color: #FFF;
+  background-color: #FFF;
+ 
   }
 
   .catchyTitle {
@@ -118,9 +109,4 @@ background-color: #FFF;
   .imageAboutUs {display:none; }
 }
 
-
-
-
 </style>
-
-

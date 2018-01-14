@@ -1,64 +1,59 @@
 <template>
   <div class='background'>
     <div class='table'>
-     <a class="openHour">
-          OPENING HOUR
-        </a>
-    <table class="table-plain branch-hours">
-      <tbody class="line">
-        <tr class="Monday">
-          <td>Monday: </td>
-          <td>  11:00am - 10:00pm</td>
-          <td></td>
-        </tr>
-      <tr class="Tuesday">
-        <td>Tuesday: </td>
-        <td>  11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
+      <a>
+        OPENING HOUR
+      </a>
+      <table class="table-plain branch-hours">
+        <tbody class="line">
+          <tr class="Monday">
+            <td>Monday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
+          
+          <tr class="Tuesday">
+            <td>Tuesday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
 
-      <tr class="Wednesday">
-        <td>Wednesday: </td>
-        <td>  11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
+          <tr class="Wednesday">
+            <td>Wednesday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
 
-      <tr class="Thursday">
-        <td>Thursday: </td>
-        <td>  11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
+          <tr class="Thursday">
+            <td>Thursday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
 
-      <tr class="Friday">
-        <td>Friday: </td>
-        <td>11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
+          <tr class="Friday">
+            <td>Friday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
 
-      <tr class="Saturday">
-        <td>Saturday: </td>
-        <td>  11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
+          <tr class="Saturday">
+            <td>Saturday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
 
-      <tr class="Sunday">
-        <td>Sunday: </td>
-        <td>  11:00am - 10:00pm</td>
-        <td></td>
-      </tr>
-  </tbody>
-</table>
-</div>
-  <div class='other'>
-    <a class='phoneAndAddress'> Phone Number and Address </a>
-    <div class='phone'>
-      604-568-4500 /
-      604-558-4994
+          <tr class="Sunday">
+            <td>Sunday: </td>
+            <td>11:00am-10:00pm</td>
+          </tr>
+          
+        </tbody>
+      </table>
     </div>
-    <div class='address'>
-      82 Keefer Place (across International Village), Vancouver, BC, V6B 0C9
+    <div class='other'>
+      <a class='phoneAndAddress'> Phone Number and Address </a>
+        <div class='phone'>
+          604-568-4500 /
+          604-558-4994
+        </div>
+        <div class='address'>
+          82 Keefer Place (across International Village), Vancouver, BC, V6B 0C9
+        </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -67,15 +62,10 @@ export default {
 
 }
 
-
 </script>
-
 
 <style scoped>
 
-.openHour {
-  color: #FFFF00;
-}
 
 .phone, .address {
   text-align: center;
@@ -100,16 +90,17 @@ export default {
 
 a {
   font-family: 'TradeGothicW01-Extended', sans-serif;
-    text-transform: uppercase;
-    margin: 0;
-    color: #FFFF00;
-    font-size: 30px;
-    margin-bottom: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #FFFF00;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .background {
   text-align: center;
 }
+
 table.table-plain,
 table.table-plain td
 {

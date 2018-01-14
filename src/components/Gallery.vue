@@ -4,7 +4,7 @@
       <hr>
         <body>
          <coverflow :coverList="coverList" :coverWidth="260" :index="2" bgColor="#333"></coverflow>
-       </body>
+        </body>
     </div>
 </template>
 
@@ -32,19 +32,7 @@ export default {
             cover: require('../assets/DSC00149.jpg'),
             title: 'Canucks Roll'
           }
-          // , {
-          //   cover: require('../assets/DSC00284.jpg'),
-          //   title: ''
-          // }, {
-          //   cover: require('../assets/DSC00161.jpg'),
-          //   title: 'Red Dragon Roll & Canucks Roll'
-          // }, {
-          //   cover: require('../assets/DSC00122.jpg'),
-          //   title: ''
-          // }
         ],
-
-
       }
     },
     components: {
@@ -53,7 +41,6 @@ export default {
 }
 
 </script>
-
 
 <style scoped>
 
@@ -75,8 +62,4 @@ export default {
     width: 75%;
   }
 
-
-
 </style>
-
-

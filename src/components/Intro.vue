@@ -1,12 +1,10 @@
 <template>
   <div>
     <div v-for="number in [currentNumber]" transition="fade">
-    <img class='images' :src="images[currentNumber % images.length]  " />
+      <img class='images' :src="images[currentNumber % images.length]  " />
     </div>
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -34,12 +32,9 @@ export default {
          next: function() {
             this.currentNumber += 1
         }
-
     }
-
 }
 </script>
-
 
 <style scoped>
 
@@ -64,11 +59,10 @@ export default {
   opacity: 1;
   position: relative;
 }
+
 .fade-enter, .fade-leave {
   opacity: 0;
   visibility: hidden;
 }
 
 </style>
-
-
