@@ -136,7 +136,7 @@ export default {
         imgs[j].style.position = 'absolute'
         imgs[j].style.width = '60%'
         imgs[j].style.height = '60%'
-        imgs[j].style.bottom = '60px'
+        imgs[j].style.bottom = '115px'
 
         if (!shadow && imgShadow) {
           imgs[j].style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)'

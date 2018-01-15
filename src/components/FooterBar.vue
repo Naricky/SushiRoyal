@@ -2,7 +2,7 @@
   <div class='background'>
     <div class='table'>
       <a>
-        OPENING HOUR
+        <tr class='openHour'>OPENING HOUR</tr>
       </a>
       <table class="table-plain branch-hours">
         <tbody class="line">
@@ -40,7 +40,7 @@
             <td>Sunday: </td>
             <td>11:00am-10:00pm</td>
           </tr>
-          
+
         </tbody>
       </table>
     </div>
@@ -66,7 +66,6 @@ export default {
 
 <style scoped>
 
-
 .phone, .address {
   text-align: center;
 }
@@ -81,18 +80,26 @@ export default {
   width: 50%;
   float: right;
   text-align: center;
+  background-color: white;
+  font-family: "AvenirNextLTW01-Regular", sans-serif;
+  font-size: 16;
+  line-height: 1.3;
+  color: #bcbcbc;
 }
 
-.phoneAndAddress{
+.openHour {
+  color: #bcbcbc;
+}
+
+.phoneAndAddress {
   text-align: center;
-  margin-right: 150px;
 }
 
 a {
+  color: #d8964c;
   font-family: 'TradeGothicW01-Extended', sans-serif;
   text-transform: uppercase;
   margin: 0;
-  color: #FFFF00;
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -105,17 +112,18 @@ table.table-plain,
 table.table-plain td
 {
     border: none !important;
-    table-layout: auto;
-    padding: .5rem;
+    /*table-layout: auto;*/
+    /*padding: .5rem;*/
     padding: 0;
-    border-spacing: 0;
+    /*border-spacing: 0;*/
     font-family: "AvenirNextLTW01-Regular", sans-serif;
     font-size: 16;
-    line-height: 1.3;
+    line-height: 1.5;
     color: #bcbcbc;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 377px;
+    max-width: 400px;
+    text-align: center;
 }
 
 table.table-plain td:first-child {
@@ -133,16 +141,11 @@ table.table-plain td:nth-child(2) {
   background-color: #111111;
 }
 
-.other {
-  background-color: white;
-  font-family: "AvenirNextLTW01-Regular", sans-serif;
-  font-size: 16;
-  line-height: 1.3;
-  color: #bcbcbc;
+.line {
   text-align: center;
 }
 
-.line {
+tr {
   text-align: center;
 }
 

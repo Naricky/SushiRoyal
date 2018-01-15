@@ -44,6 +44,10 @@ export default {
 
 <style scoped>
 
+  body {
+    background-color: black;
+  }
+
   .backgroundGalleryImage {
     background-color: black;
     height: 100%;
